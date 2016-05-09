@@ -78,20 +78,20 @@
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum eu quam eget laoreet. Curabitur vitae sapien ac eros tincidunt efficitur sed eget orci. Integer justo orci, facilisis in lorem eget, porta hendrerit massa. Vivamus suscipit facilisis suscipit. In faucibus at purus sit amet condimentum.</p>
 
 		
-			<div data-role="navbar" id="navegacion" >
-				<ul>
-					<li><a href="#"  data-icon="grid" class="ui-btn-icon-notext">Summary</a></li>
-					<li>
-						<div data-role="collapsible" >
-							<h4 class="ui-btn-icon-notext">Heading</h4>
-								<p>Aliquam dictum eu quam eget laoreet. Curabitur vitae sapien ac eros tincidunt efficitur sed eget orci. Integer justo orci, facilisis in lorem eget, porta hendrerit massa. Vivamus suscipit facilisis suscipit. In faucibus at purus sit amet condimentum.</p>
-						</div>
-					</li>
-					<li><a href="#" data-icon="gear" class="ui-btn-icon-notext">Setup</a></li>
-				</ul>
-			</div><!-- /navbar -->
-	
-    </div>
+			<div data-role="tabs" id="tabs">
+  <div data-role="navbar">
+    <ul>
+      <li><a href="ajax-content-ignore.html" data-ajax="false" class="ui-icon-grid ui-btn-icon-notext">one</a></li>
+      <li><a href="#two" data-ajax="false" class="ui-icon-plus ui-btn-icon-notext">two</a></li>
+      <li><a href="ajax-content-ignore.html" data-ajax="false" class="ui-icon-gear ui-btn-icon-notext">three</a></li>
+    </ul>
+  </div>
+  <div id="one" class="ui-body-d ui-content">
+  </div>
+  <div id="two">
+   <p>Integer justo orci, facilisis in lorem eget, porta hendrerit massa. Vivamus suscipit facilisis suscipit. In faucibus at purus sit amet condimentum.</p>
+  </div>
+</div>
     
 <h2>Debate</h2>
 <div id="comment">
@@ -103,7 +103,7 @@
 <input type="text" name="name2" id="name2" value="" data-clear-btn="true">
 <div class="ui-block-b"><button type="submit" class="ui-btn ui-corner-all ui-btn-b">Enviar</button></div>
 
-
+</div>
 </div>
 </div>
 
@@ -153,6 +153,7 @@
 <center><img src="img/logo.png" alt="logo" align="middle"></center>
 
 </div>
+<div data-role="content">
 <h2>Iniciar debate</h2>
 <form>
 <label for="name1">T&iacute;tulo</label>
@@ -185,7 +186,7 @@
 <div class="ui-block-b"><button type="submit" class="ui-btn ui-corner-all ui-btn-b">Enviar</button></div>
 
 </form>
-
+</div>
 </div>
 <script src="app.js"></script>
 
