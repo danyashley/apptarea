@@ -1,0 +1,193 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+
+<link rel="stylesheet" href="jquery.mobile-1.4.5.css">
+<script src="jquery-1.12.2.min.js"></script>
+<script src="jquery.mobile-1.4.5.min.js"></script>
+<link rel="stylesheet" href="estilos.css">
+
+</head>
+
+<body>
+
+<div data-role="page" id="home">
+
+<div data-role="panel" data-position="left" data-display="overlay" id="mypanelc">
+   <ul data-role="listview">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#filtros">Filtros</a></li>
+    <li><a href="#debate">Iniciar debate</a></li>
+  
+    </ul>
+</div><!-- /panel -->
+
+<div id="heade1c" data-role="header">
+<a href="#mypanelc"><button id="burger" class="ui-nodisc-icon ui ui-btn ui-corner-all ui-btn-icon-left ui-icon-bars ui-btn-icon-notext">bars</button></a>
+<center><img src="img/logo.png" alt="logo" align="middle"></center>
+
+</div>
+
+<div id="contentidoh" data-role="content">
+
+<div id="grande">
+
+<h2>Destacado</h2>
+<a href="#debate1" style="text-decoration:none;"><h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1></a>
+<h3 id="anon">por An&oacute;nimo</h3>
+
+</div>
+
+<div id="peque1">
+<a href="#" style="text-decoration:none"><h3>Lorem ipsum dolor sit amet, consectetur adipiscing</h3></a>
+<h4>Por Ram&oacute;n S</h4>
+
+</div>
+
+<div id="peque2">
+<a href="#" style="text-decoration:none;"><h3>Lorem ipsum dolor sit amet</h3></a>
+<h4>Por An&oacute;nimo</h4>
+</div>
+</div>
+</div>
+
+<div id="debate1" data-role="page">
+
+<div data-role="panel" data-position="left" data-display="overlay" id="mypanel">
+   <ul data-role="listview">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#filtros">Filtros</a></li>
+    <li><a href="#debate">Iniciar debate</a></li>
+    
+    </ul>
+</div><!-- /panel -->
+
+<div id="header" data-role="header">
+<a href="#mypanel"><button id="boton" class="ui-nodisc-icon ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bars ui-btn-icon-notext">bars</button></a>
+<center><img src="img/logo.png" alt="logo" id="logo" align="middle"></center>
+
+</div>
+
+
+<div id="content" data-role="content">
+<div id="main">
+<h1>titulo</h1>
+<h2>autor</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum eu quam eget laoreet. Curabitur vitae sapien ac eros tincidunt efficitur sed eget orci. Integer justo orci, facilisis in lorem eget, porta hendrerit massa. Vivamus suscipit facilisis suscipit. In faucibus at purus sit amet condimentum.</p>
+
+		
+			<div data-role="navbar" id="navegacion" >
+				<ul>
+					<li><a href="#"  data-icon="grid" class="ui-btn-icon-notext">Summary</a></li>
+					<li>
+						<div data-role="collapsible" >
+							<h4 class="ui-btn-icon-notext">Heading</h4>
+								<p>Aliquam dictum eu quam eget laoreet. Curabitur vitae sapien ac eros tincidunt efficitur sed eget orci. Integer justo orci, facilisis in lorem eget, porta hendrerit massa. Vivamus suscipit facilisis suscipit. In faucibus at purus sit amet condimentum.</p>
+						</div>
+					</li>
+					<li><a href="#" data-icon="gear" class="ui-btn-icon-notext">Setup</a></li>
+				</ul>
+			</div><!-- /navbar -->
+	
+    </div>
+    
+<h2>Debate</h2>
+<div id="comment">
+<p>Quisque nec magna sed orci gravida scelerisque sed quis dolor. Praesent dolor felis, vehicula nec ultrices sollicitudin, lacinia vel quam. Nullam et interdum ante. Fusce non porttitor enim, sit amet sollicitudin erat. Proin nec quam quis purus vehicula iaculis. Nunc ut sollicitudin orci. Morbi nec turpis ex. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+</div>
+<img src="img/icon.png" alt="icon" style="float:left"><h3>Daniela</h3>
+
+<label for="name2">Comentario</label>
+<input type="text" name="name2" id="name2" value="" data-clear-btn="true">
+<div class="ui-block-b"><button type="submit" class="ui-btn ui-corner-all ui-btn-b">Enviar</button></div>
+
+
+</div>
+</div>
+
+<div id="filtros" data-role="page">
+
+<div data-role="panel" data-position="left" data-display="overlay" id="mypanelf">
+   <ul data-role="listview">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#filtros">Filtros</a></li>
+    <li><a href="#debate">Iniciar debate</a></li>
+     </ul>
+</div><!-- /panel -->
+
+<div id="heade1r" data-role="header">
+<a href="#mypanelf"><button id="elboton" class="ui-nodisc-icon ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bars ui-btn-icon-notext">bars</button></a>
+<center><img src="img/logo.png" alt="logo" align="middle"></center>
+
+</div>
+
+<div data-role="content" id="contf">
+<h2>Filtrar debates por</h2>
+
+<div data-role="controlgroup" id="control">
+<a id="cat" href="index.html" data-role="button">Categor&iacute;as</a>
+<a id="pop" href="index.html" data-role="button">Popularidad</a>
+<a id="alf" href="index.html" data-role="button">Alfabeticamente</a>
+<a id="hola" href="index.html" data-role="button">Fecha de inicio</a>
+</div>
+</div>
+
+
+
+</div>
+
+<div id="debate" data-role="page">
+
+<div data-role="panel" data-position="left" data-display="overlay" id="mypaneld">
+   <ul data-role="listview">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#filtros">Filtros</a></li>
+    <li><a href="#debate">Iniciar debate</a></li>
+     </ul>
+</div><!-- /panel -->
+
+<div id="headerd" data-role="header">
+<a id="ajo" href="#mypaneld"><button class="ui-nodisc-icon ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bars ui-btn-icon-notext">bars</button></a>
+<center><img src="img/logo.png" alt="logo" align="middle"></center>
+
+</div>
+<h2>Iniciar debate</h2>
+<form>
+<label for="name1">T&iacute;tulo</label>
+<input type="text" name="name1" id="name1" value="" data-clear-btn="true">
+
+
+<label for="select-choice-1" class="select">Categoria</label>
+            <select name="select-choice-1" id="select-choice-1">
+                <option value="pintura">Pintores</option>
+                <option value="filo">Filosofia</option>
+                <option value="comida">Nutrici&oacute;n</option>
+                <option value="entrete">Entretenimiento</option>
+            </select>
+
+<div data-role="navbar">
+    <ul>
+        <li><a href="#popupBasic" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-transition="pop">Nombre</a></li>
+<li><a href="#">An&oacute;nimo</a></li>
+    </ul>
+</div><!-- /navbar -->
+
+
+<div data-role="popup" id="popupBasic">
+<label for="name3">Nombre</label>
+<input type="text" name="name1" id="name3" value="" data-clear-btn="true">
+</div>
+
+<label for="textarea2">Cuerpo</label>
+        <textarea cols="40" rows="8" name="textarea2" id="textarea2"></textarea>
+<div class="ui-block-b"><button type="submit" class="ui-btn ui-corner-all ui-btn-b">Enviar</button></div>
+
+</form>
+
+</div>
+<script src="app.js"></script>
+
+</body>
+</html>
